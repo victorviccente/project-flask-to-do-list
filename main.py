@@ -6,6 +6,12 @@ app = Flask(__name__)
 tarefas = []
 contador_id = 1
 
+"""
+
+NOSSO CURSO OFICIAL DE FLASK DA NEXT DEVS ACADEMY 
+
+"""
+
 @app.route("/", methods=["GET"])
 def home():
     return render_template("index.html", tarefas=tarefas)
